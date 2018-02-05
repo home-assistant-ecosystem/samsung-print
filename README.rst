@@ -62,4 +62,4 @@ For development is recommended to use a ``venv``.
 License
 -------
 
-``python-samsung`` is licensed under MIT, for more details check LICENSE.
+``samsung_print`` is licensed under MIT, for more details check LICENSE.
