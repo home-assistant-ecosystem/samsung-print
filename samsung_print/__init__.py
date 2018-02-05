@@ -11,6 +11,8 @@ import yaml
 import aiohttp
 import async_timeout
 
+from . import exceptions
+
 _LOGGER = logging.getLogger(__name__)
 
 _ENDPOINT = 'sws/app/information/home/home.json'
@@ -36,13 +38,11 @@ class Printer(object):
 
             _LOGGER.debug("Response from printer: %s", response.status)
             raw_data = yield from response.text()
-            data = yaml.load(raw_data.strip().replace('\t', ' '))
-
+            self.data = yaml.load(raw_data.strip().replace('\t', ' '))
             _LOGGER.debug(self.data)
         except (asyncio.TimeoutError, aiohttp.ClientError):
             _LOGGER.error("Can not load data from printer")
-
-        self.data = data
+            raise exceptions.SamsungPrinterConnectionError()
 
     def raw(self):
         """Show the raw data received from the printer."""
