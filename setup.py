@@ -23,7 +23,7 @@ if sys.argv[-1] == 'publish':
 
 setup(
     name='samsung_print',
-    version='0.0.1',
+    version='0.1.0',
     description='Python API for interacting with devices from Samsung.',
     long_description=long_description,
     url='https://github.com/fabaff/samsung_print',
