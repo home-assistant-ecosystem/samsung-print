@@ -1,6 +1,8 @@
 samsung_print
 =============
 
+This was merged with `PySyncThru <https://github.com/nielstron/pysyncthru>`_ and is no longer maintained.
+
 Python API for interacting with printers from Samsung. Mainly to get the
 details about the different media levels.
 
