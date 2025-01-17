@@ -33,7 +33,7 @@ setup(
     license='MIT',
     install_requires=['aiohttp', 'async_timeout', 'PyYAML'],
     packages=['samsung_print'],
-    python_requires='>=3.5',
+    python_requires='>=3.10',
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -43,7 +43,7 @@ setup(
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.10',
         'Topic :: Utilities',
     ],
 )
